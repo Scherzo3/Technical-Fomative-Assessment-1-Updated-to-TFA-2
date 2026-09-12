@@ -6,33 +6,33 @@ class Users extends BaseController
 {
     public function index()
     {
-        $users = [
-            [
-                'username' => 'admin1',
-                'fullname' => 'John Admin',
-                'role' => 'Administrator'
-            ],
-            [
-                'username' => 'cashier1',
-                'fullname' => 'Jane Smith',
-                'role' => 'Cashier'
-            ],
-            [
-                'username' => 'staff1',
-                'fullname' => 'Peter Cruz',
-                'role' => 'Staff'
-            ],
-            [
-                'username' => 'staff2',
-                'fullname' => 'Mary Reyes',
-                'role' => 'Staff'
-            ],
-            [
-                'username' => 'manager1',
-                'fullname' => 'Robert Garcia',
-                'role' => 'Manager'
-            ]
-        ];
+$users = [ 
+    [ 
+        'username' => 'sysadmin01', 
+        'fullname' => 'Adrian Valdez', 
+        'role' => 'Administrator' 
+    ], 
+    [ 
+        'username' => 'cashier02', 
+        'fullname' => 'Clara Mendoza', 
+        'role' => 'Cashier' 
+    ], 
+    [ 
+        'username' => 'staff03', 
+        'fullname' => 'Ethan Navarro', 
+        'role' => 'Staff' 
+    ], 
+    [ 
+        'username' => 'staff04', 
+        'fullname' => 'Lia Montemayor', 
+        'role' => 'Staff' 
+    ], 
+    [ 
+        'username' => 'manager02', 
+        'fullname' => 'Marcus Villareal', 
+        'role' => 'Manager' 
+    ] 
+];
 
         return view('users', ['users' => $users]);
     }
